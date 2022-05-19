@@ -1,5 +1,5 @@
 import { Route, Routes, Navigate } from "react-router-dom";
-import Signup from "./components/Singup";
+// import Signup from "./components/Singup";
 import Login from "./components/Login";
 import Maincomponents from "./components/Maincomponents";
 import { PrivateRoute } from "./components/config/Privateroute";
@@ -36,7 +36,7 @@ function App() {
 			<Route exact path="/employeedetails/:id" activepage="5" element={<NewPrivateRoute><EmployeeDetailsComponent /></NewPrivateRoute>}/>
 			<Route exact path="/generateBill" activepage="6" element={<NewPrivateRoute><BillGenerateComponent /></NewPrivateRoute>}/>
 			<Route exact path="/customerRequest" activepage="7" element={<NewPrivateRoute><CustomerRequestComponent /></NewPrivateRoute>}/>
-			<Route path="/signup" exact element={<Signup />} />
+			{/* <Route path="/signup" exact element={<Signup />} /> */}
 			<Route path="/login" exact element={<Login />} />
 			<Route path={Config.logoutPageUrl} exact element={<Logout />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
